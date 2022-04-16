@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The concat() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+const arr1 = ["Orange", "Lemon"];
+const arr2 = ["Apple", "Banana", "Lichi"];
+
+const Fruits = arr1.concat(arr2); 
+document.getElementById("demo").innerHTML = Fruits;
+</script>
+<h2>The indexOf() Method</h2>
+<p id="demo1"></p>
+
+<script>
+const fruits = ["Mango", "Orange", "Apple", "Pineapple"];
+let index = fruits.indexOf("Apple");
+
+document.getElementById("demo1").innerHTML = index;
+</script>
+<h2>The length method</h2>
+
+<p id="demo2"></p>
+
+<script>
+const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+let length =  fruits.length;
+
+document.getElementById("demo2").innerHTML = length;
+</script>
+<h2>The Array.map() method </h2>
+
+<p id="demo3"></p>
+
+<script>
+const numbers = [4, 9, 16, 25];
+document.getElementById("demo3").innerHTML = numbers.map(Math.sqrt);
+</script>
+<h2>The pop() Method</h2>
+<p id="demo4"></p>
+
+<script>
+const fruitsss = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();
+document.getElementById("demo4").innerHTML = fruits;
+</script>
+<h2>The push() Method</h2>
+<p id="demo5"></p>
+
+<script>
+const fruit = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+
+document.getElementById("demo5").innerHTML = fruits;
+</script>
+<h2>The reverse() Method</h2>
+<p id="demo6"></p>
+
+<script>
+const fruitssss = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo6").innerHTML = fruits.reverse();
+</script>
+<h2>The shift() Method</h2>
+<p id="demo7"></p>
+
+<script>
+const fruitsssss = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+
+document.getElementById("demo7").innerHTML = fruits;
+</script>
+<h2>slice()</h2>
+<p id="demo8"></p>
+
+<script>
+const frui = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3);
+
+document.getElementById("demo8").innerHTML = citrus;
+</script>
+<h2>The unshift() Method</h2>
+<p id="demo9"></p>
+
+<script>
+const fruitssssss = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon", "Pineapple");
+
+document.getElementById("demo9").innerHTML = fruits;
+</script>
+
+
+</body>
+</html>

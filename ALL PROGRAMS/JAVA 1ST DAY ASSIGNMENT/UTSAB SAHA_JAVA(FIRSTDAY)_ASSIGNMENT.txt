@@ -1,0 +1,40 @@
+2.class A {
+    public static void main(String[] args) {
+        int length;
+        length=4;
+        float area;
+        area=length*length;
+        System.out.println(area);
+    }
+}
+
+
+1.class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}
+
+3.class A{
+    public static void main{String args[]){
+        int a=22;
+        int b=20;
+        System.out.println("addition of a+b :"+(a+b));
+        System.out.println("The result of a==b ="+(a==b));
+        System.out.println("Value of a+=6 is :"+(a+=6));
+        System.out.println((5>2) && (8>5));//true{
+    }
+}
+
+4.
+class B{
+    public static void main(String args[]){
+        String s1="Utsab";
+        String s2="Saha";
+        System.out.println(s1+" "+s2);
+        System.out.println(s2.indexOf("n"));
+        String s3=s1+s2;
+        System.out.println(s3.toUpperCase());
+        System.out.println(s3.toLowerCase());
+    }
+}

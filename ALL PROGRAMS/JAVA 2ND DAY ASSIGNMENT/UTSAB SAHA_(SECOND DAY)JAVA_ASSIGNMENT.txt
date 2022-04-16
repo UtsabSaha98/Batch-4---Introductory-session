@@ -1,0 +1,115 @@
+1.
+import java.util.Scanner;  
+public class TableExample  
+{  
+public static void main(String args[])   
+{  
+Scanner sc = new Scanner(System.in);  
+System.out.print("Enter number: ");       
+ 
+int num=sc.nextInt();  
+  
+for(int i=1; i <= 10; i++)  
+{  
+     
+System.out.println(num+" * "+i+" = "+num*i);  
+}  
+}  
+} 
+
+2.class main {
+    public static void main(String[] args) {
+        int a=5;
+        double b=9.11;
+        double c=a;
+        int d= (int) b;
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println("Additional "+(a+=11));
+        
+    }
+}
+
+3.public class D{
+    public static void main(String[] args){
+        int i,num=55, sum=0;
+        for(i=1;i<=num;++i)
+        {
+            sum =sum + i;
+            i++;
+        }
+            System.out.println("Sum of ten numbers = " + sum);
+            System.out.println(Math.sqrt(sum));
+    }
+}
+
+4.class U{
+    public static void main(String args[])
+    {
+        int r = 6;
+        for(int i=1;i<=r;++i){
+            for(int j=1;j<=i;++j){
+                System.out.println("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+5.class Main{
+public static void main(String[] args){
+        int a=3;
+        int b=22;
+        int number=5;
+    switch(number){
+        case 1:
+            int c=a+b;
+            System.out.println("sum:"+c);
+            break;
+        case 2:
+            int d=a-b;
+            System.out.println("sub:"+d);
+            break;
+        case 3:
+            int v=a*b;
+            System.out.println("multi:"+v);
+            break;
+        default:
+            System.out.println("none");
+    }    
+  }
+
+}
+
+6.import java.util.Scanner;
+
+public class Main {
+	private static Scanner sc;
+	
+	public static void main(String[] args) {
+		sc = new Scanner(System.in);
+		
+		System.out.print("Please Enter Pyramid Pattern Rows = ");
+		int rows = sc.nextInt();
+		
+		System.out.println("--------");
+		int i = 1 ;
+		while( i <= rows) 
+		{
+			int j = 0 ; 
+			while(j < rows - i ) 
+			{
+				System.out.print(" ");
+				j++;
+			}
+			int k = 0 ; 
+			while(k < (i * 2) - 1) 
+			{
+				System.out.print("*");
+				k++;
+			}
+			System.out.println();
+			i++;
+		}
+	}
+}

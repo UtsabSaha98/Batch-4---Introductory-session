@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>MY SWITCH CASE PROGRAM</p>
+
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var country = document.getElementById("myInput").value;
+
+  switch(country) {
+    case "India":
+      text = "INDIA IS INCREDIBLE!";
+    break;
+    case "AUSTRALIA":
+    text = "AUSTRALIA IS GREAT.";
+    break;
+    case "ENGLAND":
+    text = "ENGLAND is BEAUTIFUL";
+    break;
+    default:
+    text = "ALL COUNTRIES HAS ITS OWN BEAUTY";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

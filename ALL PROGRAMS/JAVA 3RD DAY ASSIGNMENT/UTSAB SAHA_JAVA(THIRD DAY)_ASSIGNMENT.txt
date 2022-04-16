@@ -1,0 +1,114 @@
+1.import java.util.Scanner;  
+public class ReverseNumber 
+{  
+  
+public static void reverseNumber(int number)   
+{  
+if (number < 10)   
+{  
+  
+System.out.println(number);  
+return;  
+}  
+else   
+{  
+System.out.print(number % 10);  
+reverseNumber(number/10);  
+}  
+}  
+public static void main(String args[])  
+{  
+System.out.print("Enter the number that  want to reverse: ");  
+Scanner sc = new Scanner(System.in);  
+int num = sc.nextInt();  
+System.out.print("The reverse of the given number is: ");  
+
+reverseNumber(num);  
+}  
+} 
+
+2.class India{
+    public void Ind(){
+        System.out.println("India");
+    }
+}  
+class Kolkata extends India{
+    void victoria(){
+        System.out.println("City of Joy");
+    }
+}
+class Main{
+    public static void main(String args[]){
+        Kolkata obj=new Kolkata();
+        obj.victoria();
+        obj.Ind();
+    }
+}
+
+3.class India{
+    public void Ind(){
+        System.out.println("India");
+    }}
+class Kolkata extends India{
+    void victoria(){
+        System.out.println("City of Joy");
+    }}
+class Mumbai extends Kolkata{
+    void wankhede(){
+        System.out.println("Mumbai");
+    }}
+class Main{
+    public static void main(String args[]){
+       Mumbai obj=new Mumbai();
+        obj.wankhede();
+        obj.victoria();
+        obj.Ind();
+    }}
+    
+    
+4.class Area{
+    public void sqr(int a){
+        System.out.println("area of square"+(a*a));
+    }
+    public void rec(float x, float y){
+        System.out.println("area of rec"+x*y);
+    }
+    public void circle(double a){
+        double x=3.14*a*a;
+        System.out.println("area of circle"+x);
+    }
+}
+class Main{
+    public static void main(String args[]){
+        Area obj=new Area();
+        obj.sqr(6);
+        obj.rec(9,5);
+        obj.circle(3.7);
+    }
+}
+
+5.import java.util.*;
+class A
+{ 
+        public static void main(String args[]) 
+        {   
+	int units=888;
+ 
+	double billpay=0;
+ 
+        	if(units<100)
+	 {
+	      billpay=units*5.22;
+	  }
+	else if(units<300)
+	 {
+	   billpay=100*5.22+(units-100)*2;
+	 }
+	else if(units>300)
+	{
+	    billpay=100*5.22+200*2+(units-300)*3;
+	}
+       
+	System.out.println("Bill to pay : " + billpay); 
+      } 
+}     
